@@ -110,6 +110,10 @@ if query:
         for ans, _ in results[1:]:
             st.write("- " + ans)
 
+        st.subheader("Sources:")
+        for text, dist in results:
+            st.write("- ", text[:150], "...")
+
 # ---------- Footer ----------
 st.markdown(
     '<div class="footer">Banking AI Assistant | Built with Streamlit, FAISS & Sentence Transformers</div>',
